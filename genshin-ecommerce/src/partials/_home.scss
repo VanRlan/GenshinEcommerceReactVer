@@ -156,7 +156,7 @@ col-4 {
 @media only screen and (max-width: 800px) {
     nav ul {
         position: absolute;
-        top: 50px;
+        top: 65px;
         left: 0;
         background: rgba(17, 17, 17, 0.85);
         width: 100%;
@@ -196,15 +196,29 @@ col-4 {
     }
 
     .price {
-        width: 61.5%;
-        margin-left: 63px;
+        width: 54.7%;
+        margin-left: 82.5px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
     .price {
-        width: 61.5%;
-        margin-left: 63px;
+        width: 51.3%;
+        margin-left: 95px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .price {
+        width: 55%;
+        margin-left: 82px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .price {
+        width: 58.8%;
+        margin-left: 70px;
     }
 }
 

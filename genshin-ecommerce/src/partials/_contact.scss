@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/BigWishBackground.jpeg");
+    background-image: url("/public/img/BigWishBackground.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -189,52 +189,4 @@
     bottom: 0;
     max-height: 100%;
     margin: 0 -230px;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 800px) {
-    nav ul {
-        position: absolute;
-        top: 65px;
-        left: 0;
-        background: rgba(17, 17, 17, 0.85);
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5;
-        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
-    }
-
-    nav ul li {
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        color: #fff;
-        display: block;
-        padding: 0 10px;
-    }
-
-    .menu {
-        display: block;
-        cursor: pointer;
-    }
-
-    .imgBx {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .row {
-        text-align: center;
-    }
-
-    .col-2,
-    .col-3,
-    .col-4 {
-        flex-basis: 100%;
-    }
 }

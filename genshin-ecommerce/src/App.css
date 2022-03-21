@@ -267,7 +267,7 @@ col-4 {
 @media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;
-    top: 50px;
+    top: 65px;
     left: 0;
     background: rgba(17, 17, 17, 0.85);
     width: 100%;
@@ -306,14 +306,26 @@ col-4 {
   }
 
   .price {
-    width: 61.5%;
-    margin-left: 63px;
+    width: 54.7%;
+    margin-left: 82.5px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
   .price {
-    width: 61.5%;
-    margin-left: 63px;
+    width: 51.3%;
+    margin-left: 95px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .price {
+    width: 55%;
+    margin-left: 82px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .price {
+    width: 58.8%;
+    margin-left: 70px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -400,6 +412,382 @@ col-4 {
 
 .copyright {
   text-align: center;
+}
+
+/* Hero Image */
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 40%;
+  min-width: 300px;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.small-container {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.small-container h2 {
+  color: #333;
+  font-size: 40px;
+  text-align: center;
+  padding: 80px;
+}
+
+/* CONTENT */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/img/BigWishBackground.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin-bottom: -60px;
+}
+
+.container-two {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px;
+  height: 600px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.container-two .formBx {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-two .formBx form {
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 75px;
+}
+
+.container-two .formBx form h2 {
+  color: #111;
+  font-weight: 500;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.container-two .formBx form .inputBox {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.container-two .formBx form .inputBox:last-child {
+  margin-bottom: 0px;
+}
+
+.container-two .formBx form .inputBox input,
+.container-two .formBx form .inputBox textarea {
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #111;
+  padding-bottom: 40px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-bottom: 2px solid #111;
+  resize: none;
+}
+
+.container-two .formBx form .inputBox textarea {
+  height: 100px;
+}
+
+.container-two .formBx form .inputBox input[type=submit] {
+  background: #111;
+  padding: 8px 20px;
+  margin-top: -10px;
+  width: 100px;
+  cursor: pointer;
+  background: #814281;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.container-two .formBx form .inputBox input[type=submit]:focus {
+  background: #111;
+  color: #111;
+}
+
+.container-two .formBx form .inputBox label {
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  color: #111;
+  transition: all 0.2s;
+}
+
+.container-two .formBx form .inputBox input:focus ~ label,
+.container-two .formBx form .inputBox textarea:focus ~ label,
+.container-two .formBx form .inputBox input:valid ~ label,
+.container-two .formBx form .inputBox textarea:valid ~ label {
+  transform: translateY(-24px);
+  color: #BC002D;
+  font-size: 14px;
+}
+
+.container-two .formBx form .inputBox input:focus,
+.container-two .formBx form .inputBox textarea:focus,
+.container-two .formBx form .inputBox input:valid,
+.container-two .formBx form .inputBox textarea:valid {
+  border-bottom-color: #BC002D;
+}
+
+.container-two .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container-two .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: plum;
+  transform-origin: bottom;
+  transform: skewX(-25deg) translateX(10%);
+}
+
+.container-two .imgBx img {
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
+  margin: 0 -230px;
+}
+
+/* PRODUCTS */
+.col-3 img {
+  width: 100%;
+}
+
+.small-container-2 {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 100px;
+}
+
+.small-container-2 h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+.col-5 {
+  flex-basis: 25%;
+  padding: 20px 10px;
+}
+
+.col-4 p {
+  font-size: 20px;
+}
+
+.items {
+  height: 350px;
+  width: 100%;
+}
+
+.rating i {
+  color: gold;
+  padding: 8px 0;
+}
+
+.row-2 {
+  justify-content: space-between;
+  margin: 50px auto 50px;
+}
+
+select {
+  border: 3px solid gold;
+  padding: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 0 auto 80px;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 2px solid gold;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background: gold;
+  color: #fff;
+}
+
+.col-2 .product-info {
+  border: 1px solid #111;
+}
+
+/* Product Info */
+.single-product {
+  margin-top: 150px;
+}
+
+.single-product .col-2 img {
+  padding: 0;
+}
+
+.single-product p {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.single-product h1 {
+  padding: 10px;
+}
+
+.single-product h4 {
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.single-product select {
+  display: block;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid gold;
+}
+
+input:focus {
+  outline: none;
+}
+
+.single-product a {
+  padding: 10px 30px;
+}
+
+.single-product h3 {
+  padding-top: 20px;
+}
+
+.btn {
+  border-radius: 50px;
+  background: gold;
+  color: #fff;
+}
+
+.col-4 p {
+  font-weight: bold;
+}
+
+.col-4-1 p {
+  font-weight: bold;
+}
+
+.single-product .fa {
+  color: gold;
+  margin-left: 10px;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.small-container2 {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4-1 {
+  flex-basis: 25%;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .col-5 {
+    flex-basis: 50%;
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .col-5 {
+    flex-basis: 100%;
+    padding: 20px 10px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
