@@ -1,0 +1,96 @@
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(17, 17, 17, 0.85);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    min-width: 1300px;
+    height: 66px;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.logo img {
+    padding: 0 35px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 210px;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.icons .login-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 0;
+    outline: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.icons .login-btn img {
+    margin-left: 18px;
+    width: 27px;
+    height: 27px;
+    opacity: 0.6;
+}
+
+.hero .poster-download {
+    top: 0;
+    margin-top: 20vh;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .poster-download li {
+    flex-shrink: 0;
+    width: 188px;
+    height: 62px;
+    margin-right: 15px;
+    opacity: 0.8;
+}
+
+.hero .poster-download li a {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 28px;
+    margin-left: 20px;
+    color: #fff;
+    display: none;
+}
