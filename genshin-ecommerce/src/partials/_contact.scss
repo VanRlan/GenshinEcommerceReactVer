@@ -1,0 +1,240 @@
+/* Hero Image */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 40%;
+    min-width: 300px
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small-container h2 {
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+    padding: 80px;
+}
+
+/* CONTENT */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/BigWishBackground.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin-bottom: -60px;
+}
+
+.container-two {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px;
+    height: 600px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container-two .formBx {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-two .formBx form {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+}
+
+.container-two .formBx form h2 {
+    color: #111;
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.container-two .formBx form .inputBox {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.container-two .formBx form .inputBox:last-child {
+    margin-bottom: 0px;
+}
+
+.container-two .formBx form .inputBox input,
+.container-two .formBx form .inputBox textarea {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #111;
+    padding-bottom: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid #111;
+    resize: none;
+}
+
+.container-two .formBx form .inputBox textarea {
+    height: 100px;
+}
+
+.container-two .formBx form .inputBox input[type="submit"] {
+    background: #111;
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 100px;
+    cursor: pointer;
+    background: rgb(129, 66, 129);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.container-two .formBx form .inputBox input[type="submit"]:focus {
+    background: #111;
+    color: #111;
+}
+
+.container-two .formBx form .inputBox label {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: #111;
+    transition: all 0.2s;
+}
+
+.container-two .formBx form .inputBox input:focus~label,
+.container-two .formBx form .inputBox textarea:focus~label,
+.container-two .formBx form .inputBox input:valid~label,
+.container-two .formBx form .inputBox textarea:valid~label {
+    transform: translateY(-24px);
+    color: #BC002D;
+    font-size: 14px;
+}
+
+.container-two .formBx form .inputBox input:focus,
+.container-two .formBx form .inputBox textarea:focus,
+.container-two .formBx form .inputBox input:valid,
+.container-two .formBx form .inputBox textarea:valid {
+    border-bottom-color: #BC002D;
+}
+
+.container-two .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-two .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: plum;
+    transform-origin: bottom;
+    transform: skewX(-25deg) translateX(10%);
+}
+
+.container-two .imgBx img {
+    position: absolute;
+    bottom: 0;
+    max-height: 100%;
+    margin: 0 -230px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background: rgba(17, 17, 17, 0.85);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5;
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        display: block;
+        padding: 0 10px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .imgBx {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+}

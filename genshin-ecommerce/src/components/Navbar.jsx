@@ -15,9 +15,9 @@ const Navbar = () => {
           alt="menu-icon"
         />
         <div className="logo">
-          <a href="index.html">
+          <Link to="/">
             <img src="./img/Genshinlogo.png" alt="Genshinlogo" />
-          </a>
+          </Link>
         </div>
         <nav>
           {isMenuVisible && (
