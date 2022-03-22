@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
     return (
@@ -19,7 +20,7 @@ const Products = () => {
         </div>
         <div class="row">
             <div class="col-5">
-                <a href="product.info.html"><img src="../img/Xiao-Shirt.png" class="items" alt="XiaoShirt"/></a>
+                <Link to="/ProductInfo"><img src="../img/Xiao-Shirt.png" class="items" alt="XiaoShirt"/></Link>
                 <h2>Adepti Xiao Shirt</h2>
                 <div class="rating">
                     <i class="fa fa-star"></i>

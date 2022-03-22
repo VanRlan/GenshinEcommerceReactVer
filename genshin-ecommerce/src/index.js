@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import ProductInfo from './pages/ProductInfo';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="/products" element={<Products />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/productinfo" element={<ProductInfo />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

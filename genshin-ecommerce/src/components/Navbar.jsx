@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [isMenuVisible, setMenuVisible] = useState(false);
+    const [isMenuVisible, setMenuVisible] = useState(true);
   return (
     <>
       <header className="navbar">
@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
         <nav>
           {isMenuVisible && (
-            <ul id="MenuItems">
+            <ul id="menuItems">
               <li>
                 <Link to="/">Home</Link>
               </li>
