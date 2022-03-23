@@ -92,16 +92,16 @@ const Home = () => {
 
 
                 <div class="slide first">
-                    <img src="./img/Albedo.jpeg" alt=""/>
+                    <img src="./img/Kamisato-Ayato.webp" alt=""/>
+                </div>
+                <div class="slide">
+                    <img src="./img/Yae-Miko.jpeg" alt=""/>
                 </div>
                 <div class="slide">
                     <img src="./img/arataki-itto-introduction.jpeg" alt=""/>
                 </div>
                 <div class="slide">
                     <img src="./img/gorou-intro.jpeg" alt=""/>
-                </div>
-                <div class="slide">
-                    <img src="./img/YUnjin.jpeg" alt=""/>
                 </div>
 
                 <div class="navigation-auto">

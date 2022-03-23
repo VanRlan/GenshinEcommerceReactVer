@@ -1,37 +1,3 @@
-/* Hero Image */
-.container {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.col-2 {
-    flex-basis: 40%;
-    min-width: 300px
-}
-
-.small-container {
-    max-width: 1000px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.small-container h2 {
-    color: #333;
-    font-size: 40px;
-    text-align: center;
-    padding: 80px;
-}
-
 /* CONTENT */
 .contact {
     display: flex;
@@ -47,7 +13,7 @@
 .container-two {
     position: relative;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 20px;
     height: 600px;
     background: #fff;
@@ -58,7 +24,7 @@
 }
 
 .container-two .formBx {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +33,7 @@
 .container-two .formBx form {
     position: relative;
     width: 100%;
-    padding: 0 0 0 75px;
+    padding: 0 0 0 35px;
 }
 
 .container-two .formBx form h2 {
@@ -81,7 +47,7 @@
 
 .container-two .formBx form .inputBox {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .container-two .formBx form .inputBox:last-child {
@@ -96,7 +62,6 @@
     border: none;
     width: 100%;
     color: #111;
-    padding-bottom: 40px;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 300;
@@ -104,8 +69,12 @@
     resize: none;
 }
 
+.container-two .formBx form .inputBox input {
+    padding: 10px;
+}
+
 .container-two .formBx form .inputBox textarea {
-    height: 100px;
+    height: 50px;
 }
 
 .container-two .formBx form .inputBox input[type="submit"] {
@@ -158,7 +127,7 @@
 
 .container-two .imgBx {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 }
@@ -179,5 +148,15 @@
     position: absolute;
     bottom: 0;
     max-height: 100%;
-    margin: 0 -230px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .container-two .imgBx {
+        display: none;
+    }
+    .container-two .formBx {
+        width: 90%;
+    }
+    
 }

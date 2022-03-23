@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: #ccc;
     text-decoration: none;
 }
 
@@ -49,18 +49,47 @@ nav a:hover {
     padding: 0 35px;
 }
 
-.icons {
+// .icons {
+//     display: flex;
+//     justify-content: flex-end;
+//     position: absolute;
+//     top: 0;
+//     right: 210px;
+//     height: 100%;
+//     white-space: nowrap;
+//     font-size: 14px;
+// }
+
+.login-btn {
     display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    right: 210px;
-    height: 100%;
-    white-space: nowrap;
-    font-size: 14px;
+    align-items: center;
+    margin-left: 300px;
+    padding: 0 10px;
+    border: 0;
+    outline: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: #ccc;
+    cursor: pointer;
 }
 
-.icons .login-btn {
+.login-btn:hover {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.login-btn img {
+    margin-left: 10px;
+    width: 27px;
+    height: 27px;
+    opacity: 0.6;
+}
+
+.cart-btn:hover {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.cart-btn {
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -73,32 +102,11 @@ nav a:hover {
     cursor: pointer;
 }
 
-.icons .login-btn img {
-    margin-left: 18px;
+.cart-btn img {
+    margin-left: 10px;
     width: 27px;
     height: 27px;
     opacity: 0.6;
-}
-
-.hero .poster-download {
-    top: 0;
-    margin-top: 20vh;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.hero .poster-download li {
-    flex-shrink: 0;
-    width: 188px;
-    height: 62px;
-    margin-right: 15px;
-    opacity: 0.8;
-}
-
-.hero .poster-download li a {
-    width: 100%;
-    height: 100%;
 }
 
 .menu {
@@ -106,4 +114,52 @@ nav a:hover {
     margin-left: 20px;
     color: #fff;
     display: none;
+}
+
+.header_optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header_optionCart {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1280px) {
+    nav ul {
+      position: absolute;
+      top: 65px;
+      left: 0;
+      background: rgba(17, 17, 17, 0.85);
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5;
+      box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+    }
+  
+    nav ul li {
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      color: #fff;
+      display: block;
+      padding: 0 10px;
+    }
+  
+    .menu {
+      display: block;
+      cursor: pointer;
+    }
+
+    .login-btn,
+    .cart-btn {
+        margin-left: 0px;
+        color: #fff;
+    }
 }

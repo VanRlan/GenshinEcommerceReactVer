@@ -31,23 +31,39 @@ const Navbar = () => {
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
+              <li>
+                {/* <Link to="/login">Login</Link> */}
+                <button className="login-btn">
+                <span>LOG IN</span>
+                <img src="./img/Login.png" alt="photo" />
+                </button>
+              </li>
+              <li>
+                {/* <Link to="/cart">Cart</Link> */}
+                  <button className="cart-btn">
+                  <span>CART</span>
+                  <img src="./img/cart-icon.png" alt="" />
+                  </button>
+              </li>
             </ul>
           )}
-          <div className="icons">
+
+          {/* <div className="icons">
             <button className="login-btn">
               <span>LOG IN</span>
               <img src="./img/Login.png" alt="photo" />
             </button>
-          </div>
+            <button className="cart-btn">
+              <span>CART</span>
+              <img src="./img/cart-icon.png" alt="" />
+            </button>
+          </div> */}
+
+          {/* <div className="header_optionCart">
+            <span className="header_optionLineTwo header_cartCount">0</span>
+          </div> */}
+
         </nav>
-        <a href="#">
-          <img
-            src="https://webstatic-sea.mihoyo.com/upload/event/2020/11/06/097f419d5e84de22dd46463e4e7bff8c_6384289011155822242.png"
-            width="200"
-            height="69"
-            alt="Download"
-          />
-        </a>
       </header>
     </>
   );

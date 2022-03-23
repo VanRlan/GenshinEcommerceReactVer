@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav a {
-  color: white;
+  color: #ccc;
   text-decoration: none;
 }
 
@@ -50,18 +50,36 @@ nav a:hover {
   padding: 0 35px;
 }
 
-.icons {
+.login-btn {
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  top: 0;
-  right: 210px;
-  height: 100%;
-  white-space: nowrap;
-  font-size: 14px;
+  align-items: center;
+  margin-left: 300px;
+  padding: 0 10px;
+  border: 0;
+  outline: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: #ccc;
+  cursor: pointer;
 }
 
-.icons .login-btn {
+.login-btn:hover {
+  text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.login-btn img {
+  margin-left: 10px;
+  width: 27px;
+  height: 27px;
+  opacity: 0.6;
+}
+
+.cart-btn:hover {
+  text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.cart-btn {
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -74,11 +92,73 @@ nav a:hover {
   cursor: pointer;
 }
 
-.icons .login-btn img {
-  margin-left: 18px;
+.cart-btn img {
+  margin-left: 10px;
   width: 27px;
   height: 27px;
   opacity: 0.6;
+}
+
+.menu {
+  width: 28px;
+  margin-left: 20px;
+  color: #fff;
+  display: none;
+}
+
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header_optionCart {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1280px) {
+  nav ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: rgba(17, 17, 17, 0.85);
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 0 10px;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .login-btn,
+.cart-btn {
+    margin-left: 0px;
+    color: #fff;
+  }
+}
+/* Hero Image */
+.hero {
+  background-image: url("/public/img/ezgif.com-gif-maker.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
 }
 
 .hero .poster-download {
@@ -100,21 +180,6 @@ nav a:hover {
 .hero .poster-download li a {
   width: 100%;
   height: 100%;
-}
-
-.menu {
-  width: 28px;
-  margin-left: 20px;
-  color: #fff;
-  display: none;
-}
-
-/* Hero Image */
-.hero {
-  background-image: url("/public/img/ezgif.com-gif-maker.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 800px;
 }
 
 .container {
@@ -174,7 +239,9 @@ nav a:hover {
 
 .news {
   background-image: url(https://genshin.mihoyo.com/_nuxt/img/29770c4.jpg);
-  height: 115vh;
+  height: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .news h2 {
@@ -190,7 +257,7 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  width: 800px;
+  width: 750px;
   height: 500px;
   overflow: hidden;
 }
@@ -212,7 +279,7 @@ nav a:hover {
 }
 
 .slide img {
-  width: 800px;
+  width: 750px;
   height: 500px;
 }
 
@@ -306,7 +373,7 @@ nav a:hover {
 }
 
 .featured-products {
-  background-image: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/09/genshin-anniversary-artt.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/09/genshin-anniversary-artt.jpeg");
   margin-top: -70px;
   margin-bottom: -60px;
   background-size: cover;
@@ -513,40 +580,6 @@ col-4 {
   text-align: center;
 }
 
-/* Hero Image */
-.container {
-  max-width: 1300px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.col-2 {
-  flex-basis: 40%;
-  min-width: 300px;
-}
-
-.small-container {
-  max-width: 1000px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.small-container h2 {
-  color: #333;
-  font-size: 40px;
-  text-align: center;
-  padding: 80px;
-}
-
 /* CONTENT */
 .contact {
   display: flex;
@@ -562,7 +595,7 @@ col-4 {
 .container-two {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 20px;
   height: 600px;
   background: #fff;
@@ -573,7 +606,7 @@ col-4 {
 }
 
 .container-two .formBx {
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,7 +615,7 @@ col-4 {
 .container-two .formBx form {
   position: relative;
   width: 100%;
-  padding: 0 0 0 75px;
+  padding: 0 0 0 35px;
 }
 
 .container-two .formBx form h2 {
@@ -596,7 +629,7 @@ col-4 {
 
 .container-two .formBx form .inputBox {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .container-two .formBx form .inputBox:last-child {
@@ -611,7 +644,6 @@ col-4 {
   border: none;
   width: 100%;
   color: #111;
-  padding-bottom: 40px;
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 300;
@@ -619,8 +651,12 @@ col-4 {
   resize: none;
 }
 
+.container-two .formBx form .inputBox input {
+  padding: 10px;
+}
+
 .container-two .formBx form .inputBox textarea {
-  height: 100px;
+  height: 50px;
 }
 
 .container-two .formBx form .inputBox input[type=submit] {
@@ -673,7 +709,7 @@ col-4 {
 
 .container-two .imgBx {
   position: relative;
-  width: 50%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
@@ -694,9 +730,18 @@ col-4 {
   position: absolute;
   bottom: 0;
   max-height: 100%;
-  margin: 0 -230px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .container-two .imgBx {
+    display: none;
+  }
+
+  .container-two .formBx {
+    width: 90%;
+  }
+}
 /* PRODUCTS */
 .col-3 img {
   width: 100%;
