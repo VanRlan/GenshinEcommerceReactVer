@@ -32,11 +32,12 @@ const Navbar = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                {/* <Link to="/login">Login</Link> */}
-                <button className="login-btn">
-                <span>LOG IN</span>
-                <img src="./img/Login.png" alt="photo" />
-                </button>
+                <Link to="/login">
+                  <button className="login-btn">
+                    <span>LOG IN</span>
+                    <img src="./img/Login.png" alt="photo" />
+                  </button>
+                </Link>
               </li>
               <li>
                 {/* <Link to="/cart">Cart</Link> */}
@@ -47,17 +48,6 @@ const Navbar = () => {
               </li>
             </ul>
           )}
-
-          {/* <div className="icons">
-            <button className="login-btn">
-              <span>LOG IN</span>
-              <img src="./img/Login.png" alt="photo" />
-            </button>
-            <button className="cart-btn">
-              <span>CART</span>
-              <img src="./img/cart-icon.png" alt="" />
-            </button>
-          </div> */}
 
           {/* <div className="header_optionCart">
             <span className="header_optionLineTwo header_cartCount">0</span>

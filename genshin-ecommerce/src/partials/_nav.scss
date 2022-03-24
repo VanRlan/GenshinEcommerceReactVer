@@ -157,7 +157,11 @@ nav a:hover {
       cursor: pointer;
     }
 
-    .login-btn,
+    .login-btn {
+        margin-left: -10px;
+        color: #fff;
+    }
+    
     .cart-btn {
         margin-left: 0px;
         color: #fff;

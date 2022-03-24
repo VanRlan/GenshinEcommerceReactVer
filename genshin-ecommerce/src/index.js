@@ -6,6 +6,7 @@ import App from './App';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import ProductInfo from './pages/ProductInfo';
+import Login from './components/Popinlogin'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route path="/products" element={<Products />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/productinfo" element={<ProductInfo />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

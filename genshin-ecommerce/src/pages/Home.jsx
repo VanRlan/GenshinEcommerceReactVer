@@ -4,6 +4,15 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+    let counter = 1;
+    setInterval(function(){
+        document.getElementById('radio'+counter).checked = true;
+        counter++;
+
+        if(counter>4){
+            counter = 1;
+        }
+    }, 5000)
     return (
         <>
         <Navbar />
@@ -42,47 +51,8 @@ const Home = () => {
         </div>
     </main>
 
-    {/* <section class="slidez">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1" />
-                <input type="radio" name="radio-btn" id="radio2" />
-                <input type="radio" name="radio-btn" id="radio3" />
-                <input type="radio" name="radio-btn" id="radio4" />
-
-
-                <div class="slide first">
-                    <img src="./img/Albedo.jpeg" alt=""/>
-                </div>
-                <div class="slide">
-                    <img src="./img/arataki-itto-introduction.jpeg" alt=""/>
-                </div>
-                <div class="slide">
-                    <img src="./img/gorou-intro.jpeg" alt=""/>
-                </div>
-                <div class="slide">
-                    <img src="./img/YUnjin.jpeg" alt=""/>
-                </div>
-
-                <div class="navigation-auto">
-                    <div class="auto-btn-1"></div>
-                    <div class="auto-btn-2"></div>
-                    <div class="auto-btn-3"></div>
-                    <div class="auto-btn-4"></div>
-                </div>
-            </div>
-
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-        </div>
-    </section> */}
-
     <section className="news">
-        <h2>NEW CHARACTERS!</h2>
+        <h2> NEW CHARACTERS! </h2>
         <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1" />
@@ -119,6 +89,7 @@ const Home = () => {
                 <label for="radio4" class="manual-btn"></label>
             </div>
         </div>
+
         {/* <div className="categories">
             <div className="small-container">
                 <div className="row">

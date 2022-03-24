@@ -147,8 +147,12 @@ nav a:hover {
     cursor: pointer;
   }
 
-  .login-btn,
-.cart-btn {
+  .login-btn {
+    margin-left: -10px;
+    color: #fff;
+  }
+
+  .cart-btn {
     margin-left: 0px;
     color: #fff;
   }
@@ -257,7 +261,7 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  width: 750px;
+  width: 800px;
   height: 500px;
   overflow: hidden;
 }
@@ -279,7 +283,7 @@ nav a:hover {
 }
 
 .slide img {
-  width: 750px;
+  width: 800px;
   height: 500px;
 }
 
@@ -923,6 +927,99 @@ input:focus {
     padding: 20px 10px;
     text-align: center;
   }
+}
+/* pop up login */
+.Modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Modal h5 {
+  font-size: 30px;
+}
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c8c8c8;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .modalTitle {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .modalBody {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .modalFooter {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .modalFooter button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.Modal .openModalBtn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */
