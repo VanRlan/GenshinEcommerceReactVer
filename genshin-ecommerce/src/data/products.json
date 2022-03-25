@@ -1,9 +1,75 @@
 [
     {   
         "img": "../img/Xiao-Shirt.png",
-        "title1": "Adepti Xiao Shirt",
+        "title": "Adepti Xiao T-Shirt",
         "description": "Xiao t shirt from Genshin Impact",
-        "price1": 19.99
+        "price": 19.99
+    },
+    {   
+        "img": "../img/VentiShirt.png",
+        "title": "Venti T-Shirt ",
+        "description": "Venti t shirt from Genshin Impact",
+        "price": 19.99
+    },
+    {   
+        "img": "../img/KazuhaShirt.png",
+        "title": "Kazuha T-Shirt",
+        "description": "Kazuha t shirt from Genshin Impact",
+        "price": 19.99
+    },
+    {   
+        "img": "../img/EiShirt.png",
+        "title": "Raiden Shogun (Ei) T-Shirt",
+        "description": "Ei t shirt from Genshin Impact",
+        "price": 19.99
+    },
+    {   
+        "img": "../img/ZhongliPlush.jpeg",
+        "title": "Zhongli Plushie",
+        "description": "Zhongli Plush from Genshin Impact",
+        "price": 29.99
+    },
+    {   
+        "img": "../img/PaimonPlush.jpeg",
+        "title": "Paimon Plushie",
+        "description": "Venti t shirt from Genshin Impact",
+        "price": 29.99
+    },
+    {   
+        "img": "../img/GenshinWallscroll.jpeg",
+        "title": "Genshin Impact WallScroll",
+        "description": "Liyue character wallscroll from Genshin Impact",
+        "price": 14.99
+    },
+    {   
+        "img": "../img/Genshinstickers.jpeg",
+        "title": "100 Genshin Stickers",
+        "description": "Stickers from Genshin Impact",
+        "price": 9.99
+    },
+    {   
+        "img": "../img/GenshinKFC.jpeg",
+        "title": "KFC Collab Bundle",
+        "description": "KFC collab bundle from Genshin Impact",
+        "price": 99.99
+    },
+    {   
+        "img": "../img/KeqingFigure.jpeg",
+        "title": "Keqing Figure",
+        "description": "Keqing figurine from Genshin Impact",
+        "price": 199.99
+    },
+    {   
+        "img": "../img/GanyuFigure2.jpeg",
+        "title": "Ganyu Figure",
+        "description": "Ganyu figurine from Genshin Impact",
+        "price": 199.99
+    },
+    {   
+        "img": "../img/MonaFigure.jpeg",
+        "title": "Mona Figure",
+        "description": "Mona figurine from Genshin Impact",
+        "price": 239.99
     }
 ]
 

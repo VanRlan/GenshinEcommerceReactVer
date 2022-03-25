@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import Modal from "./Modal";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isMenuVisible, setMenuVisible] = useState(true);
+
+    const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <header className="navbar">
@@ -32,12 +35,15 @@ const Navbar = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link to="/login">
-                  <button className="login-btn">
-                    <span>LOG IN</span>
-                    <img src="./img/Login.png" alt="photo" />
-                  </button>
-                </Link>
+                {/* <Link to="/"> */}
+                  <div className="Modal">
+                    <button className="login-btn" onClick={() => {setOpenModal(true);}}>
+                      <span>LOG IN</span>
+                      <img src="./img/Login.png" alt="photo" />
+                    </button>
+                    {openModal && <Modal closeModal={setOpenModal} />}
+                  </div>
+                {/* </Link> */}
               </li>
               <li>
                 {/* <Link to="/cart">Cart</Link> */}

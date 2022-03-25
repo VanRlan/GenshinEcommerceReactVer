@@ -11,10 +11,16 @@ function Modal({ closeModal }) {
         <button onClick={() => {closeModal(false);}}> X </button>
         </div>
         <div className='modalTitle'>
-          <h2> Are you sure u want to continue? </h2>
+          <h2> Log in </h2>
         </div>
         <div className='modalBody'>
-          <p> The next page is awesome</p>
+          <input type="text" id="email" placeholder='Username/Email'/>
+        </div>
+        <div className='modalBody2'>
+          <input type="text" id="email" placeholder='Password'/>
+        </div>
+        <div className='login-button'>
+          <button> Log In </button> 
         </div>
         <div className='modalFooter'>
           <button onClick={() => {
