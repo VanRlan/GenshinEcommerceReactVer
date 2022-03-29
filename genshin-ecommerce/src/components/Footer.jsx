@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-      <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
+      <div className="container">
+            <div className="row">
+                <div className="footer-col-1">
                     <h3>Download The Game</h3>
                     <p> Get it on all platforms</p>
-                    <div class="app-logo">
+                    <div className="app-logo">
                         <img src="https://webstatic-sea.mihoyo.com/upload/event/2021/04/27/caf1de876b2d79715604463df4187b2f_4939885485338929477.png"
                             alt=""/>
                         <img src="https://webstatic-sea.mihoyo.com/upload/event/2020/12/14/6ff53bc5d797e9efc2ac7b2b602c267a_8295237617862628623.png"
@@ -20,12 +20,12 @@ const Footer = () => {
                             alt=""/>
                     </div>
                 </div>
-                <div class="footer-col-2">
+                <div className="footer-col-2">
                     <img src="../img/Genshinlogo.png" alt=""/>
                     <img src="../img/Mihoyologo.png" alt="Mihoyo"/>
                     <p>Download App for Android and ios mobile phone.</p>
                 </div>
-                <div class="footer-col-3">
+                <div className="footer-col-3">
                     <h3>Useful Links</h3>
                     <ul>
                         <li>Coupons</li>
@@ -34,7 +34,7 @@ const Footer = () => {
                         <li>Join Affiliate</li>
                     </ul>
                 </div>
-                <div class="footer-col-4">
+                <div className="footer-col-4">
                     <h3>Follow Us</h3>
                     <ul>
                         <li>Facebook</li>
@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr/>
-            <p class="copyright">Copyright 2021 - Mihoyo</p>
+            <p className="copyright">Copyright 2021 - Mihoyo</p>
         </div>
       </footer>
     </>

@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import CartContext from "../context/cart-context";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import products from "../data/products.json";
-import { useState } from "react";
 
 const Products = () => {
-  const [searchTerm, setSearchTerm] = useState('')
+  // const [productDesc, setProductDesc] = useState('');
+  // const [productPrice, setProductPrice] = useState('');
+
+  // const addToCart = () => {
+  //   Axios.post('http://localhost:3001/api/insert', { productName: productName, productDesc: productDesc, productPrice: productPrice }).then(() => {
+  //     alert("successful insert");
+  //   });
+  // };
+
+  const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <>
-      <Navbar />
+    <CartContext.Consumer>
+      {context => (
+        <>
+        <Navbar />
       <div className="small-container-2">
         <div className="row row-2">
           <h1>All Products</h1>
@@ -27,7 +37,7 @@ const Products = () => {
           </select>
         </div>
         <div className="row">
-          {products.filter((val) => {
+          {context.products.filter((val) => {
             if (searchTerm === "") {
               return val
             } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -54,7 +64,10 @@ const Products = () => {
             <p>
               <strong>${product.price}</strong>
             </p>
-            <button className="product-btn">Add to Cart</button>
+            <button 
+              className="product-btn"
+              onClick={context.addProductToCart.bind(this, product)}
+              >Add to Cart</button>
             </div>
           </div>
           ))}
@@ -71,7 +84,9 @@ const Products = () => {
         </div>
       </div>
       <Footer />
-    </>
+        </>
+      )}
+    </CartContext.Consumer>
   );
 };
 

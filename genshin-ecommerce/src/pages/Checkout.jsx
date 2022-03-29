@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext, useState } from "react";
+import CartContext from "../context/cart-context";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const Checkout = () => {
+  const context=useContext(CartContext)
+  console.log(context);
   return (
       <>
       <Navbar />
@@ -11,32 +14,22 @@ const Checkout = () => {
           <h1>Shopping Cart</h1>
           <div className='cart'>
               <div className='products'>
-                  <div className='product'>
-                      <img src="../img/xiao-shirt.png" alt="" />
+                  {context.cart.length <= 0 && <p>No Items</p>}
+                  {context.cart.map(item => (
+                      <div className='product'>
+                      <img src={item.img} alt="" />
                       <div className='product-info'>
-                          <h3 className='product-name'>Xiao Shirt</h3>
-                          <h4 className='product-price'>$19.99</h4>
+                          <h3 className='product-name'>{item.title}</h3>
+                          <h4 className='product-price'>{item.price}</h4>
                           <h4 className='product-offer'>S</h4>
-                          <p className='product-quantity'>Qnt: <input value="1" name='' /></p>
-                          <button className='product-remove'>
-                              <i class="fa fa-trash" aria-hidden="true"></i>
+                          <p className='product-quantity'>QTY: <input value={item.quantity} name='' /></p>
+                          <button className='product-remove' onClick={context.removeProductFromCart.bind(this, item.id)}>
+                              <i className="fa fa-trash" aria-hidden="true"></i>
                               <span className='remove'> Remove</span>
                           </button>
                       </div>
                   </div>
-                  <div className='product'>
-                      <img src="../img/ventiShirt.png" alt="" />
-                      <div className='product-info'>
-                          <h3 className='product-name'>Venti Shirt</h3>
-                          <h4 className='product-price'>$19.99</h4>
-                          <h4 className='product-offer'>M</h4>
-                          <p className='product-quantity'>Qnt: <input value="1" name='' /></p>
-                          <button className='product-remove'>
-                              <i class="fa fa-trash" aria-hidden="true"></i>
-                              <span className='remove'> Remove</span>
-                          </button>
-                      </div>
-                  </div>
+                  ))}   
               </div>
               <div className='cart-total'>
                   <p>
@@ -45,7 +38,7 @@ const Checkout = () => {
                   </p>
                   <p>
                       <span>Number of Items</span>
-                      <span>2</span>
+                      <span>{context.cart.length}</span>
                   </p>
                   <p>
                       <span>You Save</span>

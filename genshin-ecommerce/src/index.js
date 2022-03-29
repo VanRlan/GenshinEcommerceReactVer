@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
+import GlobalState from './context/GlobalState';
 import App from './App';
 import Products from './pages/Products';
 import Products2 from './pages/Products2';
@@ -13,7 +14,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+   <GlobalState>
+   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/products" element={<Products />} />
@@ -24,6 +26,7 @@ ReactDOM.render(
       <Route path="/checkout" element={<Checkout />} />
     </Routes>
     </BrowserRouter>
+   </GlobalState>
   </React.StrictMode>,
   document.getElementById('root')
 );

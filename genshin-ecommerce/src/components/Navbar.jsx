@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import CartContext from "../context/cart-context";
 import Modal from "./LoginModal";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isMenuVisible, setMenuVisible] = useState(true);
-
+    const context=useContext(CartContext)
     const [openModal, setOpenModal] = useState(false);
   return (
     <>
@@ -48,7 +49,7 @@ const Navbar = () => {
               <li>
                 <Link to="/checkout">
                   <button className="cart-btn">
-                  <span>CART (2)</span>
+                  <span>{context.cart.length}</span>
                   <img src="./img/cart-icon.png" alt="" />
                   </button>
                 </Link>
