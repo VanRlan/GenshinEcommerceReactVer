@@ -45,9 +45,9 @@ nav a:hover {
     text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
 }
 
-.logo img {
-    padding: 0 35px;
-}
+// .logo img {
+//     padding: 0 35px;
+// }
 
 // .icons {
 //     display: flex;
@@ -98,7 +98,7 @@ nav a:hover {
     background: none;
     font-size: inherit;
     font-family: inherit;
-    color: #ccc;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -163,7 +163,7 @@ nav a:hover {
     }
     
     .cart-btn {
-        margin-left: 0px;
+        margin-left: -10px;
         color: #fff;
     }
 }

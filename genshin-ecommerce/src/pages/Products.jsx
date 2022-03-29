@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import products from "../data/products.json";
 
 const Products = () => {
-  console.log(products);
   return (
     <>
       <Navbar />
@@ -41,6 +40,7 @@ const Products = () => {
             <p>
               <strong>${product.price}</strong>
             </p>
+            <button>Add to Cart</button>
           </div>
           ))}
         </div>

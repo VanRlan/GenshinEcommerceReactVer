@@ -46,11 +46,12 @@ const Navbar = () => {
                 {/* </Link> */}
               </li>
               <li>
-                {/* <Link to="/cart">Cart</Link> */}
+                <Link to="/checkout">
                   <button className="cart-btn">
-                  <span>CART</span>
+                  <span>CART (2)</span>
                   <img src="./img/cart-icon.png" alt="" />
                   </button>
+                </Link>
               </li>
             </ul>
           )}
