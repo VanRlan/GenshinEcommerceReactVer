@@ -988,10 +988,6 @@ col-4 {
   }
 }
 /* PRODUCTS */
-.col-3 img {
-  width: 100%;
-}
-
 .small-container-2 {
   max-width: 1200px;
   margin: auto;
@@ -1003,6 +999,15 @@ col-4 {
 .small-container-2 h2 {
   color: #333;
   font-size: 20px;
+}
+
+.small-container-2 input {
+  width: 300px;
+  height: 32px;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
 }
 
 .col-5 {
@@ -1160,6 +1165,12 @@ input:focus {
     flex-basis: 50%;
     padding: 20px 10px;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .small-container-2 input {
+    margin: 10px 0;
+    border: 1px solid black;
   }
 }
 @media only screen and (max-width: 550px) {

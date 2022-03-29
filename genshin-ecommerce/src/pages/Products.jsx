@@ -3,14 +3,21 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import products from "../data/products.json";
+import { useState } from "react";
 
 const Products = () => {
+  const [searchTerm, setSearchTerm] = useState('')
+
   return (
     <>
       <Navbar />
       <div className="small-container-2">
         <div className="row row-2">
           <h1>All Products</h1>
+          <input type="text" placeholder="Search..." onChange={(event) => {
+            setSearchTerm(event.target.value)
+            }}
+          />
           <select>
             <option>Default Sorting</option>
             <option>Sort by price</option>
@@ -20,8 +27,14 @@ const Products = () => {
           </select>
         </div>
         <div className="row">
-          {products.map((product) => (
-            <div className="col-5">
+          {products.filter((val) => {
+            if (searchTerm == "") {
+              return val
+            } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+              return val
+            }
+          }).map((product, key) => (
+            <div className="col-5" key={key}>
             <Link to="/ProductInfo">
               <img
                 src={product.img}
