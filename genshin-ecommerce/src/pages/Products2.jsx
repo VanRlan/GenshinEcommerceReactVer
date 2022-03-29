@@ -2,10 +2,10 @@ import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import products from "../data/products.json";
+import products from "../data/products2.json";
 import { useState } from "react";
 
-const Products = () => {
+const Products2 = () => {
   const [searchTerm, setSearchTerm] = useState('')
 
   return (
@@ -60,7 +60,9 @@ const Products = () => {
           ))}
         </div>
         <div className="page-btn">
+          <Link to="/products">
           <span>1</span>
+          </Link>
           <Link to="/products2">
           <span>2</span>
           </Link>
@@ -75,4 +77,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Products2;

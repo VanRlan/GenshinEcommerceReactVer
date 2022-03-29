@@ -1,0 +1,14 @@
+[
+    {   
+        "img": "../img/raiden-pin.jpeg",
+        "title": "Raiden Shogun Enamel Pin",
+        "description": "Raiden Shogun from Genshin Impact Enamel Pin",
+        "price": 16.99
+    },
+    {   
+        "img": "../img/yae-miko-earring.webp",
+        "title": "Yae Miko Keychain ",
+        "description": "Yae Miko Earring Keychain from Genshin Impact",
+        "price": 9.99
+    }
+]
