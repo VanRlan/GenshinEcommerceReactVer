@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Products from './pages/Products';
-import Products2 from './pages/Products2';
 import Contact from './pages/Contact';
 import ProductInfo from './pages/ProductInfo';
 import Login from './components/Popinlogin';
@@ -17,7 +16,6 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/products2" element={<Products2 />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/productinfo" element={<ProductInfo />} />
       <Route path="/login" element={<Login />} />

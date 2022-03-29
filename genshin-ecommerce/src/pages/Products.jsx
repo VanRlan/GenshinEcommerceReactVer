@@ -28,7 +28,7 @@ const Products = () => {
         </div>
         <div className="row">
           {products.filter((val) => {
-            if (searchTerm === "") {
+            if (searchTerm == "") {
               return val
             } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
               return val
@@ -42,7 +42,6 @@ const Products = () => {
                 alt="XiaoShirt"
               />
             </Link>
-            <div className="product-details">
             <h2>{product.title}</h2>
             <div className="rating">
               <i className="fa fa-star"></i>
@@ -54,17 +53,13 @@ const Products = () => {
             <p>
               <strong>${product.price}</strong>
             </p>
-            <button className="product-btn">Add to Cart</button>
-            </div>
+            <button>Add to Cart</button>
           </div>
           ))}
         </div>
         <div className="page-btn">
           <span>1</span>
-          <Link to="/products2">
           <span>2</span>
-          </Link>
-          {/* <span>2</span> */}
           <span>3</span>
           <span>4</span>
           <span>&#8594;</span>
