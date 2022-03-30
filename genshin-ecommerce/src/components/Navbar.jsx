@@ -49,7 +49,7 @@ const Navbar = () => {
               <li>
                 <Link to="/checkout">
                   <button className="cart-btn">
-                  <span>{context.cart.length}</span>
+                  <span>CART {context.cart.length}</span>
                   <img src="./img/cart-icon.png" alt="" />
                   </button>
                 </Link>

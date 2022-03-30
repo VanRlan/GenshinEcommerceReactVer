@@ -1382,11 +1382,12 @@ input:focus {
 .checkout {
   padding-top: 100px;
   padding-left: 30px;
+  padding-bottom: 30px;
   max-width: 1200px;
 }
 
 .checkout > h1 {
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 .cart {
@@ -1395,6 +1396,12 @@ input:focus {
 
 .products {
   flex: 0.75;
+}
+
+.products p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px 0;
 }
 
 .product {
@@ -1439,7 +1446,7 @@ input:focus {
   border-radius: 5px;
   color: white;
   float: right;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 
 .product-remove:hover {

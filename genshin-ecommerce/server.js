@@ -4,12 +4,20 @@ const cors = require('cors');
 const app = express();
 const mysql = require('mysql');
 
-const db = mysql.createPool({
+const db = mysql.createConnection({
     host: 'localhost',
     user: 'devuser',
     password: 'Vanrlan',
     database: 'genshin_ecommerce'
 });
+
+db.connect(err => {
+    if(err) {
+        return err
+    } else {
+        console.log("db connection succesful.");
+    }
+})
 
 app.use(cors());
 app.use(express.json());
@@ -21,18 +29,6 @@ app.get('/api', (req, res) => {
         res.send(result);
     })
 })
-
-// app.get("/api/insert", (req, res) => {
-
-//     const productName = req.body.productName;
-//     const productDesc = req.body.productDesc;
-//     const productPrice = req.body.productPrice;
-
-//     const sqlInsert = "INSERT INTO products (product_name, product_desc, product_price) VALUES (?,?)"
-//     db.query(sqlInsert, [productName, productDesc, productPrice], (err, result) => {
-//         console.log(result);
-//     })
-// });
 
 app.listen(3001, () => {
     console.log('running on port 3001');

@@ -5,14 +5,6 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
 const Products = () => {
-  // const [productDesc, setProductDesc] = useState('');
-  // const [productPrice, setProductPrice] = useState('');
-
-  // const addToCart = () => {
-  //   Axios.post('http://localhost:3001/api/insert', { productName: productName, productDesc: productDesc, productPrice: productPrice }).then(() => {
-  //     alert("successful insert");
-  //   });
-  // };
 
   const [searchTerm, setSearchTerm] = useState('');
 

@@ -11,10 +11,10 @@ const Checkout = () => {
       <Navbar />
 
       <div className='checkout'>
-          <h1>Shopping Cart</h1>
+          <h1>YOUR CART</h1>
           <div className='cart'>
               <div className='products'>
-                  {context.cart.length <= 0 && <p>No Items</p>}
+                  {context.cart.length <= 0 && <p>No Items In Cart</p>}
                   {context.cart.map(item => (
                       <div className='product'>
                       <img src={item.img} alt="" />
